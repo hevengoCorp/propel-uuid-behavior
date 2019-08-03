@@ -20,7 +20,7 @@ class UuidObjectBuilderModifier
             'uuidColumn'            => $this->behavior->getTable()->getColumn($this->behavior->getParameter('uuid_column'))->getConstantName(),
             'uuidColumnSetter'      => $this->getColumnSetter('uuid_column'),
             'uuidColumnGetter'      => $this->getColumnGetter('uuid_column'),
-            'version'               => 4,
+            'version'               => 1,
         ));
     }
 
