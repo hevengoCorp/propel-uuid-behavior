@@ -33,6 +33,7 @@ class UuidBehavior extends Behavior
         if (!$this->getTable()->hasColumn($this->getParameter('uuid_column'))) {
             $column = array(
                 'name'          => $this->getParameter('uuid_column'),
+                'phpName'       => ucfirst($this->getParameter('uuid_column')),
                 'type'          => 'CHAR',
                 'size'          => 36,
                 'required'      => true
